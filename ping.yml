@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: servers
   tasks:
     - name: My first ping
     - ping:
