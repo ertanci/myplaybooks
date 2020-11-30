@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: My first ping
+    - ping:
