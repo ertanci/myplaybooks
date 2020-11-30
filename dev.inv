@@ -1,0 +1,4 @@
+[servers]
+10.0.2.15   ansible_user=ertan
+10.0.2.6   ansible_user=ertan
+10.0.2.4   ansible_user=ertan
