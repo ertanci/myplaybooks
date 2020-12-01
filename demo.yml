@@ -1,5 +1,4 @@
 ---
-- name: demo
 - hosts: c1
   tasks:
 
