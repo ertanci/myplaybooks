@@ -10,16 +10,13 @@
        cmd: pwd
      args:
        chdir: /home/ertan
+     register: mypwd
 
    - name: create a password via openssl
      command:
       cmd: openssl rand -hex 7
      register: mypass
 
-   - name: echo test
-     command:
-      cmd: echo "my echo is {{mypass.stdout}}"
-
    - name: write my pass variable
      debug: 
-        msg: "my pass you created in yaml {{mypass.stdout}}"
+        msg: "my pwd is {{mypwd.stdout}} and my pass you created in yaml {{mypass.stdout}}"
