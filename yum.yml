@@ -12,7 +12,7 @@
 
    - name: Install list of packeges
      yum:
-       name: {{ mypackageList }}
+       name: "{{ mypackageList }}"
        state: present
      vars:
        mypackageList:
