@@ -1,0 +1,22 @@
+---
+- hosts: c1
+  tasks:
+
+   - name: Make sure that we can connect to the machine
+     ping:
+
+   - name: Upgrade vi
+     yum:
+       name: vi
+       state: latest
+
+   - name: Install list of packeges
+     yum:
+       name: {{ mypackageList }}
+       state: present
+     vars:
+       mypackageList:
+       - vim
+       - vi
+       
+
