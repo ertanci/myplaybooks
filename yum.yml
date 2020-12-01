@@ -22,5 +22,15 @@
        - vim
        - vi
      become: true
+
+   - name: Install list of packeges
+     yum:
+       name: "{{item}}"
+       state: present
+       update_cache: true
+     with_items:
+      - nano
+      - wget
+     become: true
        
 
