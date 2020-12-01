@@ -9,12 +9,14 @@
      yum:
        name: vi
        state: latest
+       update_cache: true
      become: true
 
    - name: Install list of packeges
      yum:
        name: "{{ mypackageList }}"
        state: present
+       update_cache: true
      vars:
        mypackageList:
        - vim

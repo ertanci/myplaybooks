@@ -1,0 +1,25 @@
+---
+- hosts: c1
+  tasks:
+
+   - name: Make sure that we can connect to the machine
+     ping:
+
+   - name: create a password via openssl
+     command:
+       cmd: pwd
+     args:
+       chdir: /home/ertan
+
+   - name: create a password via openssl
+     command:
+      cmd: openssl rand -hex 7
+     register: mypass
+
+   - name: echo test
+     command:
+      cmd: echo "my echo is {{mypass.stdout}}"
+
+   - name: write my pass variable
+     debug: 
+        msg: "my pass you created in yaml {{mypass.stdout}}"
