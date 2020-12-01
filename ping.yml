@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: c1
   tasks:
     - name: My first ping
       ping:
