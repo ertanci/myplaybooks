@@ -17,4 +17,3 @@
 
 [all:vars]
 ansible_user=ertan
-ansible_become_user=root
