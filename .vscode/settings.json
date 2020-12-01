@@ -1,0 +1,10 @@
+{
+    "ansible.fileCopyConfig": [
+        {
+            "server": "127.0.0.1",
+            "sourcePath": "c:\\ERTANC\\EGITIM\\ansible\\myplaybooks/",
+            "targetPath": "myplaybooks/",
+            "copyOnSave": true
+        }
+    ]
+}
