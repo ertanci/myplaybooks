@@ -5,7 +5,7 @@
    - name: Make sure that we can connect to the machine
      ping:
 
-   - name: create a password via openssl
+   - name: execute pwd command
      command:
        cmd: pwd
      args:
