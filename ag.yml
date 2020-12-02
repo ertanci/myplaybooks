@@ -1,0 +1,13 @@
+---
+- name: instal ansible galaxy playbook
+- hosts: man
+  tasks:
+   - name: install epel-release and ansible galaxy
+     yum:
+       name: "{{packages}}"
+       state: present
+     vars:
+      packages:
+        - epel-release
+        - ansible-galaxy
+
