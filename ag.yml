@@ -1,5 +1,4 @@
 ---
-- name: instal ansible galaxy playbook
 - hosts: man
   tasks:
    - name: install epel-release and ansible galaxy
