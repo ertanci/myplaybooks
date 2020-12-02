@@ -9,4 +9,5 @@
       packages:
         - epel-release
         - ansible-galaxy
+     become: yes
 
