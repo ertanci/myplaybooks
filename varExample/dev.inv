@@ -1,0 +1,13 @@
+[servers]
+10.0.2.15
+10.0.2.6
+10.0.2.4
+
+[c1]
+10.0.2.4
+
+[all:vars]
+ansible_user=ertan
+ansible_password=Ertan123
+#ansible_become_user=root
+#ansible_become_password=root

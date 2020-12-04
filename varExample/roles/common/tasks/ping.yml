@@ -1,0 +1,8 @@
+---
+- name: Make sure that we can connect to the machine
+  ping:
+    data:
+
+- name: for debug
+  debug: 
+    msg: "I am {{myrolevar}}"

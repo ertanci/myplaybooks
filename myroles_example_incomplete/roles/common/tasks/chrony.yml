@@ -1,0 +1,17 @@
+---
+- name: install ntp
+  yum:
+   name: chrony
+   state: present
+
+- name: configure chrony file
+  template: 
+   src: chrony.conf.j2
+   dest: /etc/chrony.conf
+  notify: restart ntp
+
+- name: start ntp
+  service: 
+    name: chronyd
+    state: started
+    enabled: yes

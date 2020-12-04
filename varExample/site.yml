@@ -1,0 +1,5 @@
+---
+- hosts: c1
+  become: yes
+  roles: 
+  - common

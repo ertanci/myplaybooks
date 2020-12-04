@@ -1,0 +1,2 @@
+httpd_port: 80
+ntpserver: 2.centos.pool.ntp.org
