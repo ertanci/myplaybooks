@@ -8,7 +8,7 @@
    - name: Upgrade vi
      yum:
        name: vi
-       state: latest
+       state: absent
        update_cache: true
      become: true
 
