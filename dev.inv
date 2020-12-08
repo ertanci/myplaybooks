@@ -15,6 +15,7 @@
 10.0.2.7
 
 [win:vars]
+ansible_user=ertan
 ansible_connection=winrm
 ansible_winrm_transform=certificate
 ansible_winrm_cert_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_cert.pem
