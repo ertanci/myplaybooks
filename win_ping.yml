@@ -3,4 +3,5 @@
   tasks:
     - name: My first winrm ping
       win_ping:
-      become: yes
+      become: true
+      become_method: runas
