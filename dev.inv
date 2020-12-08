@@ -17,10 +17,8 @@
 [win:vars]
 ansible_connection=winrm
 ansible_winrm_transform=certificate
-ansible_winrm_cert_pem=/home/ertan/winrmSSH/client_cert.pem
-ansible_winrm_cert_key_pem=/home/ertan/winrmSSH/client_key.pem
-#ansible_winrm_cert_pem=/home/ertan/.ssh/id_rsa.pub
-#ansible_winrm_cert_key_pem=/home/ertan/.ssh/id_rsa
+ansible_winrm_cert_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_cert.pem
+ansible_winrm_cert_key_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_key.pem
 ansible_port=5986
 ansible_winrm_scheme=https
 ansible_winrm_server_cert_validation=ignore
