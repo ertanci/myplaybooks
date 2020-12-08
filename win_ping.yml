@@ -3,3 +3,4 @@
   tasks:
     - name: My first winrm ping
       win_ping:
+      become: yes
