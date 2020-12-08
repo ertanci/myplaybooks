@@ -1,0 +1,5 @@
+---
+- hosts: win
+  tasks:
+    - name: My first winrm ping
+      win_pingping:
