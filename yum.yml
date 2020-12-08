@@ -9,7 +9,6 @@
      yum:
        name: vim
        state: absent
-       update_cache: true
      become: true
 
    - name: Install net-tools and vi
@@ -20,6 +19,7 @@
      loop:
        - vi
        - net-tools
+       - telnet
      become: true
        
 
