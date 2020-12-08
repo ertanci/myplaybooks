@@ -7,19 +7,17 @@
 
    - name: Upgrade vi
      yum:
-       name: vi
+       name: vim
        state: absent
        update_cache: true
      become: true
 
-   - name: Install vim and vi
+   - name: Install net-tools and vi
      yum:
-       name: "{{ mypackageList }}"
+       name: "{{ item }}"
        state: present
        update_cache: true
-     vars:
-       mypackageList:
-       - vim
+     loop:
        - vi
        - net-tools
      become: true
