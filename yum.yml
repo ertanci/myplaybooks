@@ -1,5 +1,5 @@
 ---
-- hosts: c1
+- hosts: man
   tasks:
 
    - name: Make sure that we can connect to the machine
@@ -21,6 +21,7 @@
        mypackageList:
        - vim
        - vi
+       - net-tools
      become: true
        
 
