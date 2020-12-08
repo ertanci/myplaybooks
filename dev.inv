@@ -16,11 +16,10 @@
 
 [win:vars]
 ansible_user=ertan
-ansible_password=Tatata123*
 ansible_connection=winrm
-#ansible_winrm_transform=certificate
-#ansible_winrm_cert_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_cert.pem
-#ansible_winrm_cert_key_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_key.pem
+ansible_winrm_transform=certificate
+ansible_winrm_cert_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_cert.pem
+ansible_winrm_cert_key_pem=/var/lib/jenkins/workspace/ansible-trials/cert/client_key.pem
 ansible_port=5985
 ansible_winrm_scheme=http
-#ansible_winrm_server_cert_validation=ignore
+ansible_winrm_server_cert_validation=ignore
