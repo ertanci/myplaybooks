@@ -5,7 +5,8 @@
       win_ping:
 
     - name: My second winrm ping
-      win_ping:
+      shell:
+          executable: pwd
       register: foo
       tag: secondping
 
