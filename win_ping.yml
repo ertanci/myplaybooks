@@ -15,4 +15,4 @@
         - wins
 
     - debug:
-        msg: {{ homedir_out }}
+        msg: "{{ homedir_out }}"
