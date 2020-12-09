@@ -3,3 +3,6 @@
   tasks:
     - name: My first winrm ping
       win_ping:
+
+    - name: list directory
+      win_command: dir
