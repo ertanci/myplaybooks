@@ -4,5 +4,11 @@
     - name: My first winrm ping
       win_ping:
 
-    - name: list directory
-      win_command: dir
+    - name: Run a command under a non-Powershell interpreter (cmd in this case)
+      ansible.windows.win_shell: echo %HOMEDIR%
+      args: 
+        executable: cmd
+      register: homedir_out
+
+    - debug:
+        msg: Hello world!
