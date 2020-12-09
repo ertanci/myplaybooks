@@ -5,7 +5,7 @@
       win_ping:
 
     - name: Run a command under a non-Powershell interpreter (cmd in this case)
-      ansible.windows.win_shell: echo %HOMEDIR%
+      win_shell: echo %HOMEDIR%
       args: 
         executable: cmd
       register: homedir_out
