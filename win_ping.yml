@@ -3,3 +3,10 @@
   tasks:
     - name: My first winrm ping
       win_ping:
+
+    - name: My second winrm ping
+      win_ping:
+      register: foo
+      tag: secondping
+
+    - debug: msg=foo
