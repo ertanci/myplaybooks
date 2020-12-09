@@ -9,6 +9,8 @@
       args: 
         executable: cmd
       register: homedir_out
+      tags:
+        - wins
 
     - debug:
-        msg: Hello world!
+        msg: homedir_out
