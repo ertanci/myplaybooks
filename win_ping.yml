@@ -6,7 +6,7 @@
     - name: My first winrm ping
       win_ping:
 
-    - name: Run a command under a non-Powershell interpreter (cmd in this case)
+    - name: Run a command
       win_shell: echo %WINDIR%
       args: 
         executable: cmd
@@ -16,3 +16,4 @@
 
     - debug:
         msg: "{{ homedir_out }}"
+        changed_when: Run a command
