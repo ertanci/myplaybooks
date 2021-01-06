@@ -1,5 +1,5 @@
 ---
-- hosts: win 
+- hosts: win
   gather_facts: false
 
   tasks:
@@ -8,7 +8,7 @@
 
     - name: Run a command
       win_shell: echo %WINDIR%
-      args: 
+      args:
         executable: cmd
       register: homedir_out
       tags:
@@ -17,3 +17,4 @@
     - debug:
         msg: "{{ homedir_out }}"
         changed_when: Run a command
+        
