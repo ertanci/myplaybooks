@@ -17,4 +17,3 @@
     - debug:
         msg: "{{ homedir_out }}"
         changed_when: Run a command
-        
