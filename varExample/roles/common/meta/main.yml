@@ -3,7 +3,10 @@ galaxy_info:
   description: to test roles
   company: ertanc Company
   platforms: 
-    - Linux
+    - name: Centos
+      versions:
+        - 7
+        - 8
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
