@@ -1,0 +1,5 @@
+warn_list:  # or 'skip_list' to silence them completely 
+  - '701'  # meta/main.yml should contain relevant info 
+  - '702'  # Tags must contain lowercase letters and digits only 
+  - experimental  # all rules tagged as experimental
+
