@@ -4,5 +4,5 @@
     data:
 
 - name: for debug
-  debug: 
-    msg: "I am {{myrolevar}}"
+  debug:
+    msg: "I am {{ myrolevar }}"

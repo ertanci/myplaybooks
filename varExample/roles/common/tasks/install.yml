@@ -2,9 +2,9 @@
 - name: Upgrade vim
   yum:
     name: "{{ appname }}"
-    state: latest
+    state: present
     update_cache: true
 
 - name: for debug
-  debug: 
+  debug:
     msg: "{{ appname }} will be installed. my secret is {{ mynameis }}"
