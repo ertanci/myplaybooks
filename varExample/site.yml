@@ -1,6 +1,5 @@
 ---
 - hosts: c1
   become: true
-  roles: 
+  roles:
   - common
-
