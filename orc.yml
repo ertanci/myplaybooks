@@ -3,9 +3,9 @@
   tasks:
 
    - name: Execute the command in remote shell
-     shell: bScript.sh
+     command: bScript.sh
      register: myhostname
 
    - name: write my pass variable
      debug:
-      msg: "myhostname is {{myhostname.stdout}}"
+      msg: "myhostname is {{ myhostname.stdout }}"
