@@ -3,6 +3,11 @@ pipeline {
     agent any
 
     stages {
+        stage('SCM Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ertanci/myplaybooks'
+            }
+        }
         stage('Ansible SyntaxCheck') {
             steps {
                  withCredentials([string(credentialsId: 'BECOME_PASS', variable: 'BECOME_PASS')]) {
