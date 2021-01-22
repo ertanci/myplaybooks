@@ -1,9 +1,10 @@
 ---
 - hosts: c1
-  tasks:
+  become: yes
 
+  tasks:
    - name: Execute the command in remote shell
-     command: /home/ertan/bScript.sh
+     shelll: /home/ertan/bScript.sh
      register: myhostname
      changed_when: False
 
