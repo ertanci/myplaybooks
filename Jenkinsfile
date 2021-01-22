@@ -1,4 +1,4 @@
-myPlaybookName= 'ping'
+myPlaybookName = 'ping'
 pipeline {
     agent any
 
