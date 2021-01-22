@@ -2,7 +2,7 @@
 - hosts: c1
   tasks:
 
-   - name: Execute the command in remote shell; stdout goes to the specified file on the remote
+   - name: Execute the command in remote shell
      ansible.builtin.shell: bScript.sh
      register: myhostname
 
