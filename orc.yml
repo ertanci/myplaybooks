@@ -5,6 +5,7 @@
    - name: Execute the command in remote shell
      command: bScript.sh
      register: myhostname
+     changed_when: False
 
    - name: write my pass variable
      debug:
