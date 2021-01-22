@@ -7,5 +7,5 @@
      register: myhostname
 
    - name: write my pass variable
-     debug: 
-        msg: "myhostname is {{myhostname.stdout}}"
+     debug:
+      msg: "myhostname is {{myhostname.stdout}}"
