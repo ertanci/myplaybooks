@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        myPlaybookName = 'ping'
+        myPlaybookName = 'yum'
     }
 
     stages {
