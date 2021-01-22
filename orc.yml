@@ -3,7 +3,7 @@
   tasks:
 
    - name: Execute the command in remote shell
-     ansible.builtin.shell: bScript.sh
+     shell: bScript.sh
      register: myhostname
 
    - name: write my pass variable
