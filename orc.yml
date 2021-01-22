@@ -3,7 +3,7 @@
   tasks:
 
    - name: Execute the command in remote shell
-     command: bScript.sh
+     command: /home/ertan/bScript.sh
      register: myhostname
      changed_when: False
 
