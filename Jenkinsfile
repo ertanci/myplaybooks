@@ -1,6 +1,9 @@
-myPlaybookName = 'ping'
 pipeline {
     agent any
+
+    environment {
+        myPlaybookName = 'ping'
+    }
 
     stages {
         stage('SCM Checkout') {
