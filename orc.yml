@@ -3,6 +3,7 @@
   become: yes
 
   tasks:
+
    - name: Execute the command in remote shell
      shelll: /home/ertan/bScript.sh
      register: myhostname
