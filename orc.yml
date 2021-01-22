@@ -1,12 +1,14 @@
 ---
 - hosts: c1
-  become: yes
 
   tasks:
 
    - name: Execute the command in remote shell
-     shelll: /home/ertan/bScript.sh
+     shell: ./bScript.sh
+     args:
+       chdir: "/home/ertan"
      register: myhostname
+     tags: myhostname
      changed_when: False
 
    - name: write my pass variable
