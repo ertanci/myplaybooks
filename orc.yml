@@ -3,7 +3,7 @@
   tasks:
 
    - name: Execute the command in remote shell; stdout goes to the specified file on the remote
-     ansible.builtin.shell: /home/ertan/bScript.sh
+     ansible.builtin.shell: bScript.sh
      register: myhostname
 
    - name: write my pass variable
