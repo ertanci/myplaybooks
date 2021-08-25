@@ -12,7 +12,7 @@ pipeline {
             }
         }*/
         stage('Ansible SyntaxCheck') {
-            steps {
+            steps { 
                  withCredentials([string(credentialsId: 'BECOME_PASS', variable: 'BECOME_PASS')]) {
                     ansiblePlaybook vaultCredentialsId: 'BECOME_PASS', credentialsId: 'ertanAnsId', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: "${env.myPlaybookName}.yml", extras: '-e ansible_become_password=${BECOME_PASS} --syntax-check'
                 }
